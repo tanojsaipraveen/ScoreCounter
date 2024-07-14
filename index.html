@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div>
+        <div id="startdiv" style="display: flex;justify-content: center;align-items: center;height: 80vh;flex-direction: column;">
+            <h1 id="maintitle">Score Counter</h1>
+        <button id="startButton" >Start Game</button></div>
+        <div class="divfinish">
+            <h1 id="title" style="display: none;">Score Counter</h1>
+            <button onclick="clearData()" id="finishButton" style="margin: 20px;display: none;">Finish Game</button>
+        </div>
+    </div>
+
+    <div id="tableContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
