@@ -19,6 +19,7 @@ function startGame() {
     document.getElementById("finishButton").style.display = 'inline';
     
     if (savedData) {
+        
         const { playerNames: savedPlayerNames, data } = JSON.parse(savedData);
         if (arraysEqual(playerNames, savedPlayerNames)) {
             createTable(playerNames, data);
@@ -258,7 +259,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const { playerNames, data } = JSON.parse(savedData);
         createTable(playerNames, data);
         startButton.style.display = 'none';
+        document.getElementById('startButton').style.display = 'none';
+        document.getElementById('startdiv').style.height = '0vh';
+        document.getElementById('maintitle').style.display = 'none';
+        document.getElementById("title").style.display = 'inline';
+        document.getElementById("finishButton").style.display = 'inline';
     }
+    
 });
 
 function arraysEqual(arr1, arr2) {
