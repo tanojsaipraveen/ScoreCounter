@@ -6,8 +6,8 @@ self.addEventListener('install', function(event) {
           '/index.html',
           '/styles.css',
           '/script.js',
-          '/images/icon-192x192.png',
-          '/images/icon-512x512.png'
+          'https://tanojsaipraveen.github.io/ScoreCounter/images/icon-192x192.png',
+          'https://tanojsaipraveen.github.io/ScoreCounter/images/icon-512x512.png'
         ]);
       })
     );
